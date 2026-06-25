@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Room Dashboard</title>
+
+    <style>
+
+        body{
+            background:#1e1e1e;
+            color:white;
+            font-family:Arial;
+            text-align:center;
+        }
+
+        .card{
+            background:#2d2d2d;
+            padding:20px;
+            margin:20px;
+            border-radius:15px;
+        }
+
+        button{
+            padding:10px 20px;
+            font-size:18px;
+            margin:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>🏠 Smart Room Monitoring System</h1>
+
+    <div class="card">
+        <h2>🌡 Temperature</h2>
+        <h1>{{ temp }} °C</h1>
+    </div>
+
+    <div class="card">
+        <h2>💧 Humidity</h2>
+        <h1>{{ humidity }} %</h1>
+    </div>
+
+    <div class="card">
+        <h2>💡 LED Status</h2>
+        <h1>{{ led }}</h1>
+
+        <a href="/led/on">
+            <button>Turn ON</button>
+        </a>
+
+        <a href="/led/off">
+            <button>Turn OFF</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
